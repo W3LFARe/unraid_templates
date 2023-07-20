@@ -18,7 +18,7 @@ use lsscsi -g on root of unraid to get info for --device for cd/dvd/bluray drive
 for handbrake presets https://handbrake.fr/docs/en/latest/technical/official-presets.html&#xD;
 </Overview>
   <Category>Backup:</Category>
-  <WebUI>http://[IP]:[PORT:8088]/</WebUI>
+  <WebUI>http://[IP]:[PORT:8080]/</WebUI>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/automatic-ripping-machine/automatic-ripping-machine/main/favicon.ico</Icon>
   <ExtraParams>--device /dev/sr0 --device /dev/sg1</ExtraParams>
