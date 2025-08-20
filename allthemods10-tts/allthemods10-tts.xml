@@ -13,7 +13,7 @@
   <Category>GameServers:</Category>
   <ExtraSearchTerms>minecraft allthemods10 atm10 allthemods10tts atm10sky atm tts</ExtraSearchTerms>
   <TemplateURL>https://raw.githubusercontent.com/W3LFARe/unraid_templates/master/allthemods10-tts/allthemods10-tts.xml</TemplateURL>
-  <Icon>https://media.forgecdn.net/avatars/thumbnails/1098/957/256/256/638645426291861588.png</Icon>
+  <Icon>https://media.forgecdn.net/avatars/thumbnails/1389/739/256/256/638901033593272382.png</Icon>
 <Config 
     Name="Installed Location" 
     Target="/data" Default="/mnt/user/appdata/allthemods10/" 
