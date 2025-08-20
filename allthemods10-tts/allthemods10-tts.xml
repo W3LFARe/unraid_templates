@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>allthemods10-To the Sky ATM10SKY</Name>
+  <Name>allthemods10-tts</Name>
   <Repository>w3lfare/allthemods10-tts:latest</Repository>
   <Registry>https://hub.docker.com/repository/docker/w3lfare/allthemods10-tts</Registry>
   <Network>bridge</Network>
@@ -45,7 +45,7 @@
     Target="JVM_OPTS" 
     Default="--Xms6144m -Xmx8192m" 
     Mode="" 
-    Description="JAVA Options     Performance Tip: Allocate at least 6-8 GB of RAM for optimal performance" 
+    Description="JAVA Options&#13;&#10;Performance Tip: Allocate at least 6-8 GB of RAM for optimal performance"
     Type="Variable" 
     Display="always" 
     Required="false" 
