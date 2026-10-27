@@ -7,7 +7,7 @@ Insert an optical disc (Blu-ray, DVD, CD) and checks to see if it's audio, video
 See: https://b3n.org/automatic-ripping-machine
 
 use         lsscsi -g 
-on root of unraid to get info for --device for cd/dvd/blurat drive
+on root of unraid to get info for --device for cd/dvd/bluray drive
 
 for handbrake presets 
 https://handbrake.fr/docs/en/latest/technical/official-presets.html

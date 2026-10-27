@@ -2,39 +2,30 @@
 <Container version="2">
   <Name>homechart</Name>
   <Repository>ghcr.io/candiddev/homechart:latest</Repository>
-  <Registry>ghcr.io/candiddev/homechart:latest</Registry>
+  <Registry>https://github.com/candiddev/homechart/pkgs/container/homechart</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://github.com/candiddev/homechart</Support>
   <Project>https://homechart.app</Project>
-  <Overview>Homechart is a productivity application to manage your household data--budgets, tasks, recipes, and more. Homechart can run in your browser or on your Android and iOS devices via an app.&#xD;
+  <Overview>Homechart is a productivity application to manage your household data--budgets, tasks, recipes, calendars, inventory, and more. Homechart can run in your browser or on your Android and iOS devices via an app.&#xD;
 &#xD;
+Requires a PostgreSQL 16 database to be set up. All data and application settings are stored in the database.&#xD;
 &#xD;
-Requires POSTGRESQL 15 database to be set up &#xD;
-All data is stored in database</Overview>
+After creating your first account, configure additional settings (such as disabling public sign-ups, base URL, and SMTP email) directly in the Homechart WebUI under Admin &gt; Config.&#xD;
+&#xD;
+Documentation: https://homechart.app/docs/guides/get-homechart/self-hosted/#docker</Overview>
   <Category>Productivity:</Category>
   <WebUI>http://[IP]:[PORT:3000]</WebUI>
-  <TemplateURL/>
+  <TemplateURL>https://raw.githubusercontent.com/W3LFARe/unraid_templates/main/homechart/homechart.xml</TemplateURL>
   <Icon>https://homechart.app/homechart.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1721795469</DateInstalled>
   <DonateText/>
   <DonateLink/>
-  <Requires/>
-  <Config Name="Host Port 1" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
-  <Config Name="homechart_app_adminEmailAddresses" Target="homechart_app_adminEmailAddresses" Default="" Mode="" Description="Comma separated list of email addresses that will have admin access" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="homechart_app_baseURL" Target="homechart_app_baseURL" Default="" Mode="" Description="Base URL of the Homechart instance" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="homechart_app_signupDisabled" Target="homechart_app_signupDisabled" Default="false" Mode="" Description="Set to true to disable sign up, new accounts can be created using admin console" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="homechart_database_uri" Target="homechart_database_uri" Default="postgresql://homechart:homechart@postgresql/homechart" Mode="" Description="Database URI to connect with.  Format is postgresql://username:password@hostname/database" Type="Variable" Display="always" Required="true" Mask="false"/>
-  <Config Name="homechart_smtp_fromAddress" Target="homechart_smtp_fromAddress" Default="" Mode="" Description="Required for SMTP, email address to send from" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="homechart_smtp_hostname" Target="homechart_smtp_hostname" Default="" Mode="" Description="Required for SMTP, hostname of SMTP server" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="homechart_smtp_password" Target="homechart_smtp_password" Default="" Mode="" Description="Required for SMTP, password of SMTP server" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="homechart_smtp_port" Target="homechart_smtp_port" Default="" Mode="" Description="Required for SMTP, port of SMTP server" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="homechart_smtp_port" Target="homechart_smtp_username" Default="" Mode="" Description="Required for SMTP, username of SMTP server" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="homechart_webpush_vapidPrivateKey" Target="homechart_webpush_vapidPrivateKey" Default="" Mode="" Description="Required for web push, can be generated using `homechart generate-vapid`" Type="Variable" Display="always" Required="false" Mask="false"/>
-  <Config Name="homechart_webpush_vapidPublicKey" Target="homechart_webpush_vapidPublicKey" Default="" Mode="" Description="Required for web push, can be generated using `homechart generate-vapid`" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Requires>PostgreSQL 16</Requires>
+  <Config Name="WebUI Port" Target="3000" Default="3000" Mode="tcp" Description="WebUI port for Homechart" Type="Port" Display="always" Required="true" Mask="false">3000</Config>
+  <Config Name="Database URI" Target="homechart_database_uri" Default="postgresql://postgres:postgres@postgres/postgres" Mode="" Description="PostgreSQL connection URI. Format: postgresql://username:password@hostname:port/database" Type="Variable" Display="always" Required="true" Mask="false">postgresql://postgres:postgres@postgres/postgres</Config>
 </Container>
