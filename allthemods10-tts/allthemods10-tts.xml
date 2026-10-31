@@ -23,7 +23,6 @@ Recommended Server RAM (JVM_OPTS):&#13;
   <ExtraSearchTerms>minecraft allthemods10 atm10 allthemods10tts atm10sky atm tts</ExtraSearchTerms>
   <TemplateURL>https://raw.githubusercontent.com/W3LFARe/unraid_templates/main/allthemods10-tts/allthemods10-tts.xml</TemplateURL>
   <Icon>https://media.forgecdn.net/avatars/thumbnails/1389/739/256/256/638901033593272382.png</Icon>
-  <DonateLink>https://ko-fi.com/w3lfare</DonateLink>
 <Config 
     Name="Installed Location" 
     Target="/data" Default="/mnt/user/appdata/allthemods10-tts/" 
