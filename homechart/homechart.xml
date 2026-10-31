@@ -24,7 +24,7 @@ Documentation: https://homechart.app/docs/guides/get-homechart/self-hosted/#dock
   <PostArgs/>
   <CPUset/>
   <DonateText/>
-  <DonateLink/>
+  <DonateLink>https://ko-fi.com/w3lfare</DonateLink>
   <Requires>PostgreSQL 16</Requires>
   <Config Name="WebUI Port" Target="3000" Default="3000" Mode="tcp" Description="WebUI port for Homechart" Type="Port" Display="always" Required="true" Mask="false">3000</Config>
   <Config Name="Database URI" Target="homechart_database_uri" Default="postgresql://postgres:postgres@postgres/postgres" Mode="" Description="PostgreSQL connection URI. Format: postgresql://username:password@hostname:port/database" Type="Variable" Display="always" Required="true" Mask="false">postgresql://postgres:postgres@postgres/postgres</Config>

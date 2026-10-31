@@ -9,16 +9,21 @@
   <Privileged>false</Privileged>
   <Support>https://forums.unraid.net/topic/180452-support-allthemods10-allthemods10-tts/</Support>
   <Project>https://www.curseforge.com/minecraft/modpacks/all-the-mods-10</Project>
-  <Overview>A Modded Java Minecraft server container for Unraid that runs All the Mods 10 (ATM10).&#xD;
-&#xD;
-Recommended Server RAM (JVM_OPTS):&#xD;
-- Minimum (1-2 players): 8-10 GB (-Xms8192m -Xmx10240m)&#xD;
-- Recommended (2-5 players): 10-12 GB (-Xms8192m -Xmx12288m)&#xD;
+  <Overview>A Modded Java Minecraft server container for Unraid that runs All the Mods 10 (ATM10).&#13;
+&#13;
+Persistent Custom Mods &amp; Configs (Survives Updates):&#13;
+- Extra Mods: Drop .jar files into /data/custom_mods&#13;
+- Custom Configs: Drop config files into /data/custom_config&#13;
+&#13;
+Recommended Server RAM (JVM_OPTS):&#13;
+- Minimum (1-2 players): 8-10 GB (-Xms8192m -Xmx10240m)&#13;
+- Recommended (2-5 players): 10-12 GB (-Xms8192m -Xmx12288m)&#13;
 - Heavy / 5+ players: 14-16 GB (-Xms12288m -Xmx16384m)</Overview>
   <Category>GameServers:</Category>
   <ExtraSearchTerms>minecraft allthemods10 atm10</ExtraSearchTerms>
   <TemplateURL>https://raw.githubusercontent.com/W3LFARe/unraid_templates/main/allthemods10/allthemods10.xml</TemplateURL>
   <Icon>https://media.forgecdn.net/avatars/thumbnails/1098/957/256/256/638645426291861588.png</Icon>
+  <DonateLink>https://ko-fi.com/w3lfare</DonateLink>
 <Config 
     Name="Installed Location" 
     Target="/data" Default="/mnt/user/appdata/allthemods10/" 

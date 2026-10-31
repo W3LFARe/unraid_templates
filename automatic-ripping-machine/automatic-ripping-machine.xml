@@ -28,7 +28,7 @@ Docker Troubleshooting: https://github.com/automatic-ripping-machine/automatic-r
   <PostArgs/>
   <CPUset/>
   <DonateText/>
-  <DonateLink/>
+  <DonateLink>https://ko-fi.com/w3lfare</DonateLink>
   <Requires/>
   <Config Name="WebUI Port" Target="8080" Default="8080" Mode="tcp" Description="WebUI port for Automatic Ripping Machine" Type="Port" Display="always" Required="true" Mask="false">8080</Config>
   <Config Name="Appdata (ARM Home)" Target="/home/arm" Default="/mnt/user/appdata/ARM/" Mode="rw" Description="ARM user home directory" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/ARM/</Config>
