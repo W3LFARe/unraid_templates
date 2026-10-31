@@ -44,7 +44,7 @@ Recommended Server RAM (JVM_OPTS):&#13;
     Target="EULA" 
     Default="false" 
     Mode="" 
-    Description="Do you agree to the Mojang EULA available at https://account.mojang.com/documents/minecraft_eula? Server will not start without accepting. Set to 'true' to accept." 
+    Description="Server will not start without accepting. Set to 'true' to accept.&#13;&#10;Do you agree to the Mojang EULA available at https://account.mojang.com/documents/minecraft_eula?" 
     Type="Variable" 
     Display="always" 
     Required="true" 
@@ -62,13 +62,13 @@ Recommended Server RAM (JVM_OPTS):&#13;
 <Config 
     Name="MOTD" 
     Target="MOTD" 
-    Default="" 
+    Default="\u00a7l   \u00a72                         \u00a7oATM10 \u00a7r\n                    \u00a76Powered by \u00a74W3LFARe" 
     Mode="" 
     Description="Set the server MOTD" 
     Type="Variable" 
     Display="always" 
     Required="false" 
-    Mask="false"/>
+    Mask="false">\u00a7l   \u00a72                         \u00a7oATM10 \u00a7r\n                    \u00a76Powered by \u00a74W3LFARe</Config>
 <Config 
     Name="ALLOW_FLIGHT" 
     Target="ALLOW_FLIGHT" 
@@ -114,7 +114,7 @@ Recommended Server RAM (JVM_OPTS):&#13;
     Target="WHITELIST_USERS" 
     Default="" 
     Mode="" 
-    Description="Add Users comma-separated to the Whitelist.&#13;&#10;Example Value:&#13;&#10;TestUserName1, TestUserName2" 
+    Description="Add Users comma-separated to the Whitelist. Example Value: TestUserName1, TestUserName2. Note: Users listed here are re-added on every server start and cannot be permanently removed via in-game commands unless removed from this variable." 
     Type="Variable" 
     Display="always" 
     Required="false" 
@@ -124,7 +124,7 @@ Recommended Server RAM (JVM_OPTS):&#13;
     Target="OP_USERS"
     Default="" 
     Mode="" 
-    Description="Add Users comma-separated to grant Operator status.&#13;&#10;Example Value:&#13;&#10;TestUserName1, TestUserName2" 
+    Description="Add Users comma-separated to grant Operator status. Example Value: TestUserName1, TestUserName2. Note: Users listed here are re-added on every server start and cannot be permanently de-opped via in-game commands unless removed from this variable. (Operators automatically bypass the whitelist)." 
     Type="Variable" 
     Display="always" 
     Required="false"
